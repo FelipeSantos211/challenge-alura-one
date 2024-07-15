@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Texto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/frame_6.png" alt="Logo">
+    </header>
+
+    <main>
+        <section class="main-section">
+            <!-- <h1>Digite seu texto</h1> -->
+            <textarea id="inputText" class="textarea" placeholder="Digite seu texto" class="inputText"></textarea>
+            <p class="aviso">
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="Aviso"> Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="btn">
+                <input type="button" value="Criptografar" onclick="criptografar()">
+                <input type="button" value="Descriptografar" onclick="descriptografar()">
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="containertexto">
+                <img src="./assets/highqualityproducts11.svg" alt="Imagem de alta qualidade" class="imagem">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p class="textside">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <div id="resultContainer"></div>
+            </div>
+            <input type="button" value="Copiar" onclick="copiarTexto()" id="copyButton" class="botao" hidden>
+        </aside>
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
